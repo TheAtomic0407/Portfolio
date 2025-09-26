@@ -42,16 +42,29 @@ const scrollActive = () =>{
 }
 window.addEventListener('scroll', scrollActive)
 
-/*===== SCROLL REVEAL ANIMATION =====*/
+/*========== SCROLL REVEAL ANIMATION ==========*/
 const sr = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 2000,
-    delay: 200,
-//     reset: true
+  origin: 'top',
+  distance: '60px',
+  duration: 2000,
+  delay: 200,
+  reset: false // -> si tu veux que ça s’anime 1 seule fois
 });
 
-sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
-sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
-sr.reveal('.home__social-icon',{ interval: 200}); 
-sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+/* Home */
+sr.reveal('.home__data');
+sr.reveal('.home__img', {delay: 400});
+
+/* About */
+sr.reveal('.about__img');
+sr.reveal('.about__subtitle, .about__text', {delay: 400});
+
+/* Skills */
+sr.reveal('.skills__subtitle');
+sr.reveal('.skills__data', {interval: 200}); // apparaît un par un
+
+/* Work */
+sr.reveal('.work__img', {interval: 200});
+
+/* Contact */
+sr.reveal('.contact__input, .contact__button', {interval: 200});
