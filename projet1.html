@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project – Shortest Path in Bayonne</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Ion</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-dark" href="projet6.html">Previous Project</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#work">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="projet2.html">Next Project</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="py-5 bg-primary text-white text-center">
+        <div class="container">
+            <h1 class="fw-bold">Shortest Path in Bayonne</h1>
+            <p class="lead mb-0">Python • Graph Theory • A* • Dijkstra • Bellman-Ford-Kalaba • Visualization</p>
+        </div>
+    </header>
+
+    <!-- Overview -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-md-6">
+                    <img src="images/graphe.png" alt="Graph overview" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-6">
+                    <h2>Project Overview</h2>
+                    <p>
+                        This project models part of the city of Bayonne as a graph and compares classic shortest-path
+                        algorithms in terms of route and performance. I implemented <strong>A*</strong>,
+                        <strong>Dijkstra</strong> and a Bellman-Ford-Kalaba (BFK), and display the results on a
+                        simplified city map with step-by-step visualizations.
+                    </p>
+                    <p>
+                        The visualizations show how each algorithm explores the graph (different colors per algorithm)
+                        and highlight the final shortest path.
+                    </p>
+                    <ul>
+                        <li>Language: Python 3</li>
+                        <li>Libraries: NetworkX (optional), Matplotlib, Zelle graphics (or equivalent), Pandas, NumPy</li>
+                        <li>Theme: Graph theory and path optimization (A*, Dijkstra, BFK)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Project Videos</h2>
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="card shadow-sm border-0">
+                        <video class="card-img-top" autoplay muted loop playsinline>
+                            <source src="images/video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="card-body text-center">
+                            <p class="card-text">A* algorithm visualization.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow-sm border-0">
+                        <video class="card-img-top" autoplay muted loop playsinline>
+                            <source src="images/videoAcc.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="card-body text-center">
+                            <p class="card-text">Bellman-Ford-Kalaba (BFK) visualization.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow-sm border-0">
+                        <video class="card-img-top" autoplay muted loop playsinline>
+                            <source src="images/video3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="card-body text-center">
+                            <p class="card-text">Dijkstra algorithm visualization.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- What I learned -->
+    <section class="py-5">
+        <div class="container">
+            <h2>What I Learned</h2>
+            <p>
+                This project strengthened my understanding of heuristic search (A*), greedy algorithms (Dijkstra),
+                and relaxation-based methods (BFK). I also improved how to convert mathematical algorithms
+                into informative visual demonstrations using Python.
+            </p>
+            <p>
+                The visual comparison clarifies trade-offs: A* reduces exploration with a good heuristic, Dijkstra is
+                efficient for non-negative weights, and BFK can handle negative edges (at a higher cost).
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+        <p class="mb-1">Irazoqui Ion</p>
+        <p class="mb-0">&copy; 2025 Irazoqui Ion. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
